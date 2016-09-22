@@ -13,7 +13,7 @@ let b:current_syntax = "dockerfile"
 
 syntax case ignore
 
-syntax match dockerfileKeyword /\v^\s*(ONBUILD\s+)?(ADD|ARG|CMD|COPY|ENTRYPOINT|ENV|EXPOSE|FROM|HEALTHCHECK|LABEL|MAINTAINER|RUN|SHELL|STOPSIGNAL|USER|VOLUME|WORKDIR|MOUNT|TAG|PUSH|ATTACH|EXPORT|IMPORT)\s/
+syntax match dockerfileKeyword /\v^\s*(ONBUILD\s+)?(ADD|ARG|CMD|COPY|ENTRYPOINT|ENV|EXPOSE|FROM|HEALTHCHECK|LABEL|MAINTAINER|RUN|STOPSIGNAL|USER|VOLUME|WORKDIR|MOUNT|TAG|PUSH|ATTACH|EXPORT|IMPORT)\s/
 
 syntax region dockerfileString start=/\v"/ skip=/\v\\./ end=/\v"/
 
